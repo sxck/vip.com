@@ -1,0 +1,221 @@
+@charset 'utf-8';
+HTML,
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+dl,
+li,
+dt,
+dd,
+p,
+blockquote,
+pre,
+form,
+fieldset,
+table,
+th,
+td {
+  border: none;
+  margin: 0px;
+  padding: 0px;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+a {
+  text-decoration: none;
+}
+img {
+  border: none;
+}
+ul,
+ol,
+li {
+  list-style-type: none;
+}
+/*公共方法*/
+.clear {
+  clear: both;
+}
+.clearleft {
+  clear: left;
+}
+.clearright {
+  clear: right;
+}
+.wrapper {
+  width: 1000px;
+  margin: 0 auto;
+}
+.head {
+  font-size: 12px;
+  font: 12px/1.5 tahoma, arial, Hiragino Sans GB, WenQuanYi Micro Hei, \5FAE\8F6F\96C5\9ED1, \5B8B\4F53, sans-serif;
+}
+.head .top {
+  width: 100%;
+  background-color: #f5f5f5;
+}
+.head .top .left {
+  float: left;
+  padding: 0 20px;
+  position: relative;
+}
+.head .top .left .city {
+  width: 46px;
+  display: inline-block;
+}
+.head .top .left .moreCity {
+  border-width: 4px;
+  border-style: solid dashed dashed;
+  border-color: #999 transparent transparent transparent;
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: 12px;
+  right: 10px;
+}
+.head .top .right {
+  float: right;
+}
+.head .top .right .af ::after {
+  height: 16px;
+  width: 16px;
+  background-image: url(../img/sprite-sheet.png);
+  background-position: -207px -184px;
+  position: absolute;
+  top: 6px;
+  right: -5px;
+  content: '';
+}
+.head .top .right .af .pd213 {
+  padding: 0 20px 0 13px;
+}
+.head .top .right .list ::after {
+  height: 16px;
+  width: 16px;
+  background-image: url(../img/sprite-sheet.png);
+  background-position: -207px -184px;
+  position: absolute;
+  top: 6px;
+  right: -5px;
+  content: '';
+}
+.head .top .right .list .pd213 {
+  padding: 0 20px 0 13px;
+}
+.head .top .right .list li {
+  list-style: none;
+  float: left;
+  position: relative;
+  border: transparent 1px solid;
+  box-sizing: content-box;
+  text-align: left;
+}
+.head .top .right .list li a {
+  color: #666;
+  text-decoration: none;
+}
+.head .top .right .list li a:hover {
+  color: #F10180;
+}
+.head .top .right .list li span {
+  color: #666;
+  display: inline-block;
+  position: relative;
+}
+.head .top .right .list li .trigon {
+  border-width: 4px;
+  border-style: solid dashed dashed;
+  border-color: #999 transparent transparent transparent;
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: 12px;
+  right: -10px;
+  display: block;
+}
+.head .top .right .list li .trigon:hover {
+  border-color: transparent transparent #F10180 transparent;
+  position: absolute;
+  top: 8px;
+  cursor: pointer;
+}
+.head .top .right .list li .trigon::after {
+  display: none;
+}
+.head .top .right .list .login {
+  width: 51px;
+  padding: 0 5px 0 15px;
+}
+.head .top .right .list .sign {
+  padding: 0 20px 0 10px;
+}
+.head .top .right .list .nav-qd {
+  padding: 0 17px 0 10px;
+}
+.head .top .right .list .nav-qd img {
+  vertical-align: sub;
+  position: relative;
+  top: -1px;
+}
+.head .top .right .list .nav-qd span {
+  margin-left: 3px;
+}
+.head .top .right .list .user-order {
+  width: 48px;
+  padding: 0 20px 0 13px;
+}
+.head .top .right .list .my-sale {
+  padding: 0 30px 0 13px;
+}
+.head .top .right .list .member {
+  padding: 0 30px 0 13px;
+}
+.head .top .right .list .client {
+  width: 70px;
+  padding: 0 20px 0 13px;
+  box-sizing: content-box;
+}
+.head .top .right .list .phone {
+  padding: 0 20px 0 13px;
+}
+.head .top .right .list .phone .phone-img {
+  background-image: url(../img/sprite-sheet.png);
+  background-position: -294px -142px;
+  width: 10px;
+  height: 14px;
+  display: inline-block;
+  vertical-align: sub;
+  margin: 0 2px 0 0;
+}
+.head .top .right .list li:last-child::after,
+.head .top .right .list span::after,
+.head .top .right .list a::after,
+.head .top .right .list i::after {
+  display: none;
+}
+.head .top > div {
+  height: 28px;
+  line-height: 27px;
+}

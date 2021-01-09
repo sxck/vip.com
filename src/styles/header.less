@@ -17,7 +17,9 @@ address, caption, cite, code, dfn, em, strong, th, var {
     font-weight: normal;
 }
 a{
+    text-decoration: none;
     text-decoration:none; 
+    color: #666;
 }
 img{
     border:none;
@@ -98,10 +100,7 @@ ul,ol,li{
                     box-sizing: content-box;
                     text-align: left;
                     
-                    a{
-                        color: #666;
-                        text-decoration:none; 
-                    }  
+                    
                     a:hover{
                         color: #F10180;
                     }
@@ -180,6 +179,9 @@ ul,ol,li{
                     margin: 0 2px 0 0;
                 }
             }
+            .nav-more{
+                .pd213;
+            }
 
             li:last-child::after,span::after,a::after,i::after{
                 display: none;
@@ -193,6 +195,89 @@ ul,ol,li{
           line-height: 27px;
        }
    }
-}
+   
+   .center{
+       margin: 0 auto;
+           .logo{
 
+               float: left;
+            img{
+                width: 160px;
+                height: 100px;
+            }
+           }
+           .logo-right{
+               position: relative;
+            float: left;
+               img{
+                   position: absolute;
+                   top: 0;
+                   left: 0;
+               width: 304px;
+               height: auto;
+                z-index: 1;
+               }
+  
+               a{
+                   position: relative;
+                   z-index: 2;
+                   display: inline-block;
+                   width: 100px;
+                   height: 100px;
+               }
+           }
+           .search{
+            float: right;
+            width: 391px;
+            margin-top: 33px;
+            
+             .searchbox{
+                box-sizing: content-box;
+                 width: 387px;
+                 height: 32px;
+                 border: 2px solid #fa2a83;
+                 border-radius: 2px;
+                 position: relative;
+                 input{
+                    //  display: inline-block;
+                    box-sizing: content-box;
+                     padding: 2px 12px;
+                     width: 311px;height: 28px;
+                     border: none;
+                     padding: 2px 12px;
+                     outline: none;
+                 }
+                 a{
+                     display: inline-block;
+                     background:#fa2a83;
+                     width: 53px;
+                     height: 32px;
+                     vertical-align: top;
+                     padding-top: 6px;
+                     position: absolute;
+                     top: 0;
+                     right: 0;
+                     text-align: center;
+                     line-height:32px;
+                     .search-icon{
+                         display: inline-block;
+                        background-image: url(../img/sprite-sheet.png);
+                        background-position: -285px -104px;
+                        width: 19px;
+                        height: 22px;
+                        
+                     }
+                 }
+                 
+             }
 
+            .search-list{
+                li{
+                    display: inline-block;
+                }
+            }
+        }
+       }
+
+    }
+   

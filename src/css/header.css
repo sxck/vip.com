@@ -45,6 +45,7 @@ var {
 }
 a {
   text-decoration: none;
+  color: #666;
 }
 img {
   border: none;
@@ -132,10 +133,6 @@ li {
   box-sizing: content-box;
   text-align: left;
 }
-.head .top .right .list li a {
-  color: #666;
-  text-decoration: none;
-}
 .head .top .right .list li a:hover {
   color: #F10180;
 }
@@ -209,6 +206,9 @@ li {
   vertical-align: sub;
   margin: 0 2px 0 0;
 }
+.head .top .right .list .nav-more {
+  padding: 0 20px 0 13px;
+}
 .head .top .right .list li:last-child::after,
 .head .top .right .list span::after,
 .head .top .right .list a::after,
@@ -218,4 +218,77 @@ li {
 .head .top > div {
   height: 28px;
   line-height: 27px;
+}
+.head .center {
+  margin: 0 auto;
+}
+.head .center .logo {
+  float: left;
+}
+.head .center .logo img {
+  width: 160px;
+  height: 100px;
+}
+.head .center .logo-right {
+  position: relative;
+  float: left;
+}
+.head .center .logo-right img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 304px;
+  height: auto;
+  z-index: 1;
+}
+.head .center .logo-right a {
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+}
+.head .center .search {
+  float: right;
+  width: 391px;
+  margin-top: 33px;
+}
+.head .center .search .searchbox {
+  box-sizing: content-box;
+  width: 387px;
+  height: 32px;
+  border: 2px solid #fa2a83;
+  border-radius: 2px;
+  position: relative;
+}
+.head .center .search .searchbox input {
+  box-sizing: content-box;
+  width: 311px;
+  height: 28px;
+  border: none;
+  padding: 2px 12px;
+  outline: none;
+}
+.head .center .search .searchbox a {
+  display: inline-block;
+  background: #fa2a83;
+  width: 53px;
+  height: 32px;
+  vertical-align: top;
+  padding-top: 6px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-align: center;
+  line-height: 32px;
+}
+.head .center .search .searchbox a .search-icon {
+  display: inline-block;
+  background-image: url(../img/sprite-sheet.png);
+  background-position: -285px -104px;
+  width: 19px;
+  height: 22px;
+}
+.head .center .search .search-list li {
+  display: inline-block;
 }

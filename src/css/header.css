@@ -112,7 +112,7 @@ li {
 .head .top .right .af .pd213 {
   padding: 0 20px 0 13px;
 }
-.head .top .right .list ::after {
+.head .top .right > .list ::after {
   height: 16px;
   width: 16px;
   background-image: url(../img/sprite-sheet.png);
@@ -122,10 +122,10 @@ li {
   right: -5px;
   content: '';
 }
-.head .top .right .list .pd213 {
+.head .top .right > .list .pd213 {
   padding: 0 20px 0 13px;
 }
-.head .top .right .list li {
+.head .top .right > .list > li {
   list-style: none;
   float: left;
   position: relative;
@@ -133,15 +133,16 @@ li {
   box-sizing: content-box;
   text-align: left;
 }
-.head .top .right .list li a:hover {
+.head .top .right > .list > li a:hover {
   color: #F10180;
+  text-decoration: none;
 }
-.head .top .right .list li span {
+.head .top .right > .list > li span {
   color: #666;
   display: inline-block;
   position: relative;
 }
-.head .top .right .list li .trigon {
+.head .top .right > .list > li .trigon {
   border-width: 4px;
   border-style: solid dashed dashed;
   border-color: #999 transparent transparent transparent;
@@ -152,52 +153,52 @@ li {
   right: -10px;
   display: block;
 }
-.head .top .right .list li .trigon:hover {
+.head .top .right > .list > li .trigon:hover {
   border-color: transparent transparent #F10180 transparent;
   position: absolute;
   top: 8px;
   cursor: pointer;
 }
-.head .top .right .list li .trigon::after {
+.head .top .right > .list > li .trigon::after {
   display: none;
 }
-.head .top .right .list .login {
+.head .top .right > .list .login {
   width: 51px;
   padding: 0 5px 0 15px;
 }
-.head .top .right .list .sign {
+.head .top .right > .list .sign {
   padding: 0 20px 0 10px;
 }
-.head .top .right .list .nav-qd {
+.head .top .right > .list .nav-qd {
   padding: 0 17px 0 10px;
 }
-.head .top .right .list .nav-qd img {
+.head .top .right > .list .nav-qd img {
   vertical-align: sub;
   position: relative;
   top: -1px;
 }
-.head .top .right .list .nav-qd span {
+.head .top .right > .list .nav-qd span {
   margin-left: 3px;
 }
-.head .top .right .list .user-order {
+.head .top .right > .list .user-order {
   width: 48px;
   padding: 0 20px 0 13px;
 }
-.head .top .right .list .my-sale {
+.head .top .right > .list .my-sale {
   padding: 0 30px 0 13px;
 }
-.head .top .right .list .member {
+.head .top .right > .list .member {
   padding: 0 30px 0 13px;
 }
-.head .top .right .list .client {
+.head .top .right > .list .client {
   width: 70px;
   padding: 0 15px 0 15px;
   box-sizing: content-box;
 }
-.head .top .right .list .phone {
+.head .top .right > .list .phone {
   padding: 0 20px 0 13px;
 }
-.head .top .right .list .phone .phone-img {
+.head .top .right > .list .phone .phone-img {
   background-image: url(../img/sprite-sheet.png);
   background-position: -294px -142px;
   width: 10px;
@@ -206,13 +207,13 @@ li {
   vertical-align: sub;
   margin: 0 2px 0 0;
 }
-.head .top .right .list .nav-more {
+.head .top .right > .list .nav-more {
   padding: 0 20px 0 13px;
 }
-.head .top .right .list li:last-child::after,
-.head .top .right .list span::after,
-.head .top .right .list a::after,
-.head .top .right .list i::after {
+.head .top .right > .list li:last-child::after,
+.head .top .right > .list span::after,
+.head .top .right > .list a::after,
+.head .top .right > .list i::after {
   display: none;
 }
 .head .top > div {
@@ -220,6 +221,7 @@ li {
   line-height: 27px;
 }
 .head .center {
+  position: relative;
   margin: 0 auto;
 }
 .head .center .logo {
@@ -252,6 +254,8 @@ li {
   float: right;
   width: 391px;
   margin-top: 33px;
+  position: absolute;
+  right: 200px;
 }
 .head .center .search .searchbox {
   box-sizing: content-box;
@@ -290,5 +294,95 @@ li {
   height: 22px;
 }
 .head .center .search .search-list li {
+  margin-right: 6px;
   display: inline-block;
+}
+.head .center .search .search-list li a {
+  color: #999;
+}
+.head .center .search .search-list li a:hover {
+  text-decoration: none;
+  color: #999;
+}
+.head .center .search .search-list li span {
+  margin-right: 6px;
+}
+.head .center .car {
+  box-sizing: content-box;
+  margin-top: 33px;
+  float: right;
+  position: relative;
+  width: 36px;
+  height: 32px;
+  border: 1px solid #ccc;
+  padding-left: 25px;
+  padding-right: 33px;
+  line-height: 32px;
+  cursor: pointer;
+  border-radius: 2px;
+  background-color: #f6f7f9;
+}
+.head .center .car a:hover {
+  color: #666;
+}
+.head .center .car .shop-car {
+  background-image: url(../img/sprite-sheet.png);
+  background-position: 0 -208px;
+  width: 12px;
+  height: 17px;
+  position: absolute;
+  top: 8px;
+  left: 8px;
+}
+.head .center .car span:nth-child(2) {
+  display: inline-block;
+}
+.head .center .car span:last-child {
+  position: absolute;
+  top: 8px;
+  right: 3px;
+  height: 16px;
+  width: 24px;
+  background-color: #f00581;
+  text-align: center;
+  line-height: 16px;
+  color: #fff;
+  border-radius: 8px;
+}
+.head .bottom a:hover {
+  text-decoration: none;
+}
+.head .bottom .list {
+  padding: 0 180px 0 76px;
+  display: flex;
+  justify-content: space-around;
+  font-size: 16px;
+  text-align: center;
+  line-height: 43px;
+}
+.head .bottom .list li:first-child {
+  background-color: #f10180;
+  width: 156px;
+}
+.head .bottom .list li:first-child a {
+  height: 43px;
+  display: block;
+  color: #fff;
+  line-height: 43px;
+}
+.head .bottom .list li:first-child > a:hover {
+  color: #fff;
+}
+.head .bottom .list li {
+  float: left;
+}
+.head .bottom .list li a {
+  color: black;
+}
+.head .bottom .list li a:hover {
+  color: #f10180;
+}
+.head .bottom .list li:nth-child(2) a {
+  color: #f10180;
+  font-weight: 900;
 }

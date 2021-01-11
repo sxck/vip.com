@@ -18,7 +18,6 @@ address, caption, cite, code, dfn, em, strong, th, var {
 }
 a{
     text-decoration: none;
-    text-decoration:none; 
     color: #666;
 }
 img{
@@ -90,9 +89,9 @@ ul,ol,li{
                 padding: 0 20px 0 13px;
             }
             }
-            .list{
+            >.list{
                 .af;
-                li{
+                >li{
                     list-style: none;
                     float: left;
                     position: relative;
@@ -103,6 +102,7 @@ ul,ol,li{
                     
                     a:hover{
                         color: #F10180;
+                        text-decoration: none;
                     }
                     span{
                         color: #666;
@@ -197,9 +197,9 @@ ul,ol,li{
    }
    
    .center{
+       position: relative;
        margin: 0 auto;
            .logo{
-
                float: left;
             img{
                 width: 160px;
@@ -224,12 +224,16 @@ ul,ol,li{
                    display: inline-block;
                    width: 100px;
                    height: 100px;
-               }
+                   
+                }
+                
            }
            .search{
             float: right;
             width: 391px;
             margin-top: 33px;
+            position: absolute;
+            right: 200px;
             
              .searchbox{
                 box-sizing: content-box;
@@ -259,6 +263,7 @@ ul,ol,li{
                      right: 0;
                      text-align: center;
                      line-height:32px;
+                     
                      .search-icon{
                          display: inline-block;
                         background-image: url(../img/sprite-sheet.png);
@@ -269,15 +274,115 @@ ul,ol,li{
                      }
                  }
                  
+                 
              }
 
             .search-list{
                 li{
+                    margin-right: 6px;
                     display: inline-block;
+                    a{
+                        color: #999;
+                    }
+                    a:hover{
+                        text-decoration: none;
+                        color: #999;
+                   }
+                   span{
+                       margin-right: 6px;
+                   }
                 }
             }
         }
-       }
+        .car{
+        box-sizing: content-box;
+        margin-top: 33px;
+        float: right;
+        position: relative;
+            width: 36px;
+            height: 32px;
+            border:  1px solid #ccc;
+            padding-left: 25px;
+            padding-right: 33px;
+            line-height: 32px;
+            cursor: pointer;
+            border-radius: 2px;
+            background-color: #f6f7f9;
+           a:hover{
+               color: #666;
+           }
+            .shop-car{
+                background-image: url(../img/sprite-sheet.png);
+                background-position: 0 -208px;
+                width: 12px;
+                height: 17px;
+                position: absolute;
+                top:8px;
+                left: 8px;
+            }
+            span:nth-child(2){
+                display: inline-block;
+            }
 
+            span:last-child{
+                position: absolute;
+                top: 8px;
+                right: 3px;
+                height: 16px;
+                width: 24px;
+                background-color: #f00581;
+                text-align: center;
+                line-height: 16px;
+                color: #fff;
+                border-radius: 8px;
+            }
+        }
+       }
+.bottom{
+    
+    a:hover{
+        text-decoration: none;
+    }
+    .list{
+       
+        padding:0 180px 0 76px;
+        display: flex;
+        justify-content: space-around;
+        font-size: 16px;
+        text-align: center;
+        line-height: 43px;
+        li:first-child{
+            background-color:#f10180 ;
+            width: 156px;
+           a{
+               height: 43px;
+               display: block;
+               color: #fff;
+               line-height: 43px;
+           }
+           >a:hover{
+            color: #fff;
+           }
+        }
+
+
+        li{
+            float: left;
+            a{
+                color: black;
+            }
+            a:hover{
+                color: #f10180 ;
+               }
+            
+        }
+        li:nth-child(2){
+            a{
+                color: #f10180 ;
+                font-weight: 900;
+            }   
+        }
+    }
+}
     }
    

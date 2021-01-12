@@ -1,0 +1,70 @@
+@charset 'utf-8';
+.footer .foot {
+  padding-left: 30px;
+}
+.footer .foot .list {
+  height: 115px;
+  background: url('../img/foot-bg.png');
+  background-repeat: no-repeat;
+}
+.footer .foot .list-bottom {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer .foot .list-bottom a {
+  text-decoration: none;
+}
+.footer .foot .list-bottom li {
+  position: relative;
+  width: 100%;
+}
+.footer .foot .list-bottom li > ul {
+  border-right: 1px solid #999;
+  height: 120px;
+  width: 100%;
+  position: absolute;
+  left: -5px;
+  font-size: 12px;
+}
+.footer .foot .list-bottom li > ul > li {
+  left: 20px;
+  list-style: square;
+  transition: all 0.3s ease-in;
+  margin: 5px 0;
+}
+.footer .foot .list-bottom li > ul > li:hover {
+  left: 25px;
+}
+.footer .foot .list-bottom li > ul > li:hover a {
+  color: #f10180;
+}
+.footer .foot .list-bottom > li:last-child {
+  text-align: center;
+  margin: 0;
+}
+.footer .foot .about {
+  display: flex;
+  justify-content: center;
+  background: #f10180;
+  color: #fff;
+}
+.footer .foot .about li {
+  margin: 0 5px;
+}
+.footer .foot .about a {
+  color: #fff;
+  text-decoration: none;
+}
+.footer .foot .about a:hover {
+  color: #999;
+}
+.footer .foot .bot-text {
+  font-size: 14px;
+}
+.footer .foot .bot-text a {
+  text-decoration: none;
+}
+.footer .foot .bot-text a:hover {
+  color: #f10180;
+}

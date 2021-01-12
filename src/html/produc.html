@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>唯品会（原Vipshop.com）特卖会：品牌特卖_确保正品_确保低价_货到付款</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="../js/library/jquery.lazyload.js"></script>
+    <link rel="stylesheet" href="../css/index.css">
+    <!-- <link rel="stylesheet" href="../css/foot.css"> -->
+    <script>
+        $(function() {
+            $(".lazy").lazyload({
+                effect: "fadeIn"
+            });
+        });
+    </script>
+    <script>
+        $(function() {
+            const xhr = new XMLHttpRequest();
+            xhr.open('get', './library/header.html');
+            xhr.send();
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState == 4 && xhr.status == 200) {
+                    $('.header')[0].innerHTML = xhr.responseText;
+                }
+            }
+            const xhr1 =
+                new XMLHttpRequest();
+            xhr1.open('get', './library/footer.html');
+            xhr1.send();
+            xhr1.onreadystatechange = function() {
+                if (xhr1.readyState == 4 && xhr1.status == 200) {
+                    $('.footer')[0].innerHTML = xhr1.responseText;
+                }
+            }
+        });
+    </script>
+</head>
+
+<body>
+    <div class="header">
+    </div>
+    <div class="main">
+        <div class="wrapper">
+            <div class="top">
+                <div class="left">
+                    <div class="img-top">
+                        <img src="../img/Produc/Produc1-1.jpg" alt="">
+                        <div class="botimg">
+                            <span class="lt">&lt;</span>
+                            <ul class="list">
+                                <li>
+                                    <a href=""><img src="../img/Produc/Produc1-2.jpg" alt=""></a>
+                                </li>
+                                <li>
+                                    <a href=""><img src="../img/Produc/Produc1-3.jpg" alt=""></a>
+                                </li>
+                            </ul>
+                            <span class="gt">&gt;</span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="right">
+                    <h4>热销 小新Air14 六核锐龙R5-4600U性能版办公学习手提笔记本电脑</h4>
+                    <div class="pricebg">
+                        <img src="../img/1597801542667.png" alt="">
+                        <span>￥</span>
+                        <span class="yuan">3999</span>
+                        <span>5折起</span>
+                        <span class="wpkq"><img src="../img/wpkq-font.png" alt=""></span>
+                        <span>累计热卖1.7万件</span>
+                        <span>券后3399起</span>
+                    </div>
+                    <div class="city"><span>配送</span>
+                        <p>请选择省市区 <span>∨</span></p>
+                    </div>
+                    <div class="yf">
+                        <span>运费</span> 订单满88元免运费
+                    </div>
+                    <div class="color">
+                        <span>颜色</span>
+                        <span>黑色</span>
+                    </div>
+                    <div class="gg">
+                        <span>规格</span>
+                        <span>标配：R5-4600U/8G/256G固态/集显/14英寸</span>
+                    </div>
+                    <div class="num">
+                        <span>数量</span>
+                        <div class="num-btn">
+                            <button class="subtract">-</button>
+                            <input type="text" value="1" min="1" max="100" id="num">
+                            <button class="add">+</button>
+                        </div>
+                    </div>
+
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="footer"></div>
+    </footer>
+</body>
+
+
+</html>

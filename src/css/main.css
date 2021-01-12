@@ -3,6 +3,11 @@
   margin: 0;
   padding: 0;
 }
+@font-face {
+  font-family: 'iconfont';
+  src: url('../img/font_6qn5lbe3bfm/iconfont.eot');
+  src: url('../img/font_6qn5lbe3bfm/iconfont.eot?#iefix') format('embedded-opentype'), url('../img/font_6qn5lbe3bfm/iconfont.woff2') format('woff2'), url('../img/font_6qn5lbe3bfm/iconfont.woff') format('woff'), url('../img/font_6qn5lbe3bfm/iconfont.ttf') format('truetype'), url('../img/font_6qn5lbe3bfm/iconfont.svg#iconfont') format('svg');
+}
 main .banner-bg {
   background-image: url(../img/banner-bg.jpg);
   background-repeat: no-repeat;
@@ -35,6 +40,7 @@ main .banner-bg .banner .banner-img .top .banner-list {
   overflow: hidden;
 }
 main .banner-bg .banner .banner-img .top .banner-list img {
+  width: 100%;
   height: 340px;
 }
 main .banner-bg .banner .banner-img .top .banner-btn {
@@ -146,7 +152,7 @@ main .everyDay .top {
 }
 main .everyDay .top .left {
   width: 500px;
-  height: 300px;
+  height: 284px;
   position: relative;
 }
 main .everyDay .top .left img:first-child {
@@ -263,7 +269,7 @@ main .everyDay .top .left .yget {
 }
 main .everyDay .top .right {
   width: 500px;
-  height: 300px;
+  height: 284px;
   position: relative;
 }
 main .everyDay .top .right img:first-child {
@@ -371,6 +377,196 @@ main .everyDay .bottom {
   height: 298px;
   position: relative;
 }
-main .everyDay .bottom img:first-child {
-  width: 100%;
+main .everyDay .bottom .list {
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  background-image: url(../img/wpkq.png);
+  background-size: contain;
+  width: 1000px;
+  height: 298px;
+  position: relative;
+}
+main .everyDay .bottom .list li {
+  margin-top: 74px;
+  text-align: center;
+  width: 145px;
+}
+main .everyDay .bottom .list li a {
+  text-decoration: none;
+}
+main .everyDay .bottom .list li img {
+  display: block;
+  height: 145px;
+}
+main .brand {
+  margin: 50px;
+}
+main .brand a {
+  text-decoration: none;
+}
+main .brand .woman {
+  margin: 50px 0;
+  position: relative;
+}
+main .brand .woman > a {
+  position: absolute;
+  bottom: 0;
+  right: 17px;
+}
+main .brand .woman > a span {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #999;
+  color: #999;
+  border-radius: 50%;
+  font-size: 12px;
+  text-align: center;
+  position: absolute;
+  bottom: 3px;
+  right: -16px;
+}
+main .brand .woman > a:hover {
+  color: #f10180;
+}
+main .brand .woman > a:hover span {
+  border-color: #f10180;
+  color: #f10180;
+}
+main .brand .brand-line {
+  border-bottom: 1px solid black;
+}
+main .brand .brand-img {
+  display: flex;
+}
+main .brand .brand-img a {
+  color: black;
+}
+main .brand .brand-img .sc {
+  background: #fff;
+  opacity: 0;
+  border-radius: 16px;
+  padding: 0 5px;
+  position: absolute;
+  right: 15px;
+  bottom: 70px;
+  font-size: 12px;
+  line-height: 20px;
+  transition: opacity 0.5s ease-in;
+}
+main .brand .brand-img .sc .iconfont {
+  color: #f10180;
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+main .brand .brand-img .sc:hover {
+  background: #f10180;
+}
+main .brand .brand-img .sc:hover a {
+  color: #fff;
+}
+main .brand .brand-img .sc:hover .iconfont {
+  color: #fff;
+}
+main .brand .brand-img .left {
+  transition: all 1s ease-in;
+  position: relative;
+  background: #fff;
+  margin-right: 10px;
+}
+main .brand .brand-img .left img {
+  width: 490px;
+  height: 235px;
+}
+main .brand .brand-img .left h4 {
+  font-weight: 900;
+  font-family: MicrosoftYaHei;
+  margin: 10px 0;
+}
+main .brand .brand-img .left p {
+  font-size: 16px;
+}
+main .brand .brand-img .left p span {
+  color: #f10180;
+  margin-right: 5px;
+  font-weight: 900;
+}
+main .brand .brand-img .left:hover .sc {
+  opacity: 1;
+}
+main .brand .brand-img .right {
+  margin-left: 10px;
+  position: relative;
+}
+main .brand .brand-img .right img {
+  width: 490px;
+  height: 235px;
+}
+main .brand .brand-img .right h4 {
+  font-weight: 900;
+  font-family: MicrosoftYaHei;
+  margin: 10px 0;
+}
+main .brand .brand-img .right p {
+  font-size: 16px;
+}
+main .brand .brand-img .right p span {
+  color: #f10180;
+  margin-right: 5px;
+  font-weight: 900;
+}
+main .brand .brand-img .right:hover .sc {
+  opacity: 1;
+}
+main .brand .more {
+  margin-top: 30px;
+  border-top: 1px solid #e8e8e8;
+}
+main .brand .more a {
+  border-radius: 3px;
+  text-align: center;
+  line-height: 44px;
+  font-size: 16px;
+  margin: 0 auto;
+  display: block;
+  width: 324px;
+  height: 44px;
+  color: #fff;
+  background: #f10180;
+}
+main .brand .more a:hover {
+  background: #f43499;
+}
+main .brand .shoe {
+  margin: 50px 0;
+  position: relative;
+}
+main .brand .shoe > a {
+  position: absolute;
+  bottom: 0;
+  right: 17px;
+}
+main .brand .shoe > a span {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #999;
+  color: #999;
+  border-radius: 50%;
+  font-size: 12px;
+  text-align: center;
+  position: absolute;
+  bottom: 3px;
+  right: -16px;
+}
+main .brand .shoe > a:hover {
+  color: #f10180;
+}
+main .brand .shoe > a:hover span {
+  border-color: #f10180;
+  color: #f10180;
 }

@@ -1,0 +1,191 @@
+@charset 'utf-8';
+.main {
+  padding-top: 20px;
+}
+.main .top {
+  display: flex;
+}
+.main .top .left img {
+  width: 420px;
+  height: 420px;
+}
+.main .top .left .img-top .botimg {
+  display: flex;
+  position: relative;
+}
+.main .top .left .img-top .botimg .lt {
+  width: 29px;
+  height: 64px;
+  line-height: 64px;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  background: rgba(0, 0, 0, 0.3);
+}
+.main .top .left .img-top .botimg .gt {
+  position: absolute;
+  right: 0;
+  width: 29px;
+  height: 64px;
+  line-height: 64px;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  background: rgba(0, 0, 0, 0.3);
+}
+.main .top .left .img-top .botimg .list {
+  display: flex;
+}
+.main .top .left .img-top .botimg .list li {
+  margin: 0 5px;
+  border: 1px solid #f2f2f2;
+}
+.main .top .left .img-top .botimg .list li:hover {
+  border-color: #f10180;
+}
+.main .top .left .img-top .botimg .list img {
+  width: 62px;
+  height: 62px;
+}
+.main .top .right {
+  font-size: 12px;
+  margin-left: 30px;
+}
+.main .top .right h4 {
+  font-size: 16px;
+  margin-top: 30px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+.main .top .right .pricebg {
+  position: relative;
+}
+.main .top .right .pricebg img {
+  width: 550px;
+  height: 94px;
+}
+.main .top .right .pricebg > span {
+  color: #fff;
+}
+.main .top .right .pricebg > span:nth-of-type(1) {
+  position: absolute;
+  left: 24px;
+  top: 22px;
+  font-size: 25px;
+}
+.main .top .right .pricebg > span:nth-of-type(2) {
+  position: absolute;
+  left: 45px;
+  top: 7px;
+  font-size: 40px;
+}
+.main .top .right .pricebg > span:nth-of-type(3) {
+  position: absolute;
+  left: 145px;
+  top: 30px;
+  font-size: 16px;
+}
+.main .top .right .pricebg > span:nth-of-type(4) {
+  position: absolute;
+  right: 30px;
+  top: 20px;
+  display: inline-block;
+}
+.main .top .right .pricebg > span:nth-of-type(4) img {
+  width: 100px;
+  height: 24px;
+}
+.main .top .right .pricebg > span:nth-of-type(5) {
+  position: absolute;
+  right: 30px;
+  top: 50px;
+  font-size: 12px;
+}
+.main .top .right .pricebg > span:nth-of-type(6) {
+  position: absolute;
+  left: 30px;
+  bottom: 12px;
+  font-size: 15px;
+  display: inline-block;
+  color: #ce0e74;
+  padding: 0 12px;
+  background: #ffe1f3;
+  border-radius: 3px;
+}
+.main .top .right .city {
+  margin-top: 15px;
+  color: #999;
+  line-height: 30px;
+}
+.main .top .right .city p {
+  color: black;
+  padding: 0 10px;
+  margin-left: 15px;
+  height: 30px;
+  display: inline-block;
+  width: 250px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  background-color: #fff;
+  position: relative;
+}
+.main .top .right .city p span {
+  position: absolute;
+  right: 15px;
+}
+.main .top .right .yf {
+  margin-top: 15px;
+  color: #999;
+  line-height: 30px;
+}
+.main .top .right .yf span {
+  margin-right: 15px;
+}
+.main .top .right .color {
+  margin-top: 15px;
+  color: #999;
+  line-height: 30px;
+}
+.main .top .right .color span:nth-of-type(1) {
+  margin-right: 15px;
+}
+.main .top .right .color span:nth-of-type(2) {
+  display: inline-block;
+  width: 100px;
+  height: 20px;
+  border: 2px solid #f10180;
+  text-align: center;
+  line-height: 16px;
+  color: black;
+}
+.main .top .right .gg {
+  margin-top: 15px;
+  color: #999;
+  line-height: 30px;
+}
+.main .top .right .gg span:nth-of-type(1) {
+  margin-right: 15px;
+}
+.main .top .right .gg span:nth-of-type(2) {
+  display: inline-block;
+  padding: 10px 15px;
+  height: 20px;
+  border: 2px solid #f10180;
+  text-align: center;
+  line-height: 4px;
+  color: black;
+}
+.main .top .right .num {
+  margin-top: 15px;
+  color: #999;
+  line-height: 30px;
+}
+.main .top .right .num span:nth-of-type(1) {
+  margin-right: 15px;
+}
+.main .top .right .num .num-btn {
+  display: inline-block;
+}
+.main .top .right .num .num-btn input {
+  appearance: none;
+}

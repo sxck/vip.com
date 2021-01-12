@@ -1,3 +1,7 @@
-import '../js/library/lazyload-2.x/lazyload';
-let images = document.getSelectorAll('.lazyload');
-lazyload(images);
+import './library/jquery.lazyload';
+$(function() {
+    $("img").lazyload({
+        effect: "fadeIn"
+    });
+});
+export { lazy }

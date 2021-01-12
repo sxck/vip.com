@@ -304,9 +304,6 @@ li {
   text-decoration: none;
   color: #999;
 }
-.head .center .search .search-list li span {
-  margin-right: 6px;
-}
 .head .center .car {
   box-sizing: content-box;
   margin-top: 33px;
@@ -353,7 +350,7 @@ li {
   text-decoration: none;
 }
 .head .bottom .list {
-  padding: 0 180px 0 76px;
+  padding: 0 180px 0 60px;
   display: flex;
   justify-content: space-around;
   font-size: 16px;

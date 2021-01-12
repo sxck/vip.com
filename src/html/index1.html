@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>唯品会（原Vipshop.com）特卖会：品牌特卖_确保正品_确保低价_货到付款</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="../js/library/jquery.lazyload.js"></script>
+    <link rel="stylesheet" href="../css/index.css">
+    <!-- <link rel="stylesheet" href="../css/foot.css"> -->
+    <script>
+        $(function() {
+            $(".lazy").lazyload({
+                effect: "fadeIn"
+            });
+        });
+    </script>
+    <script>
+        $(function() {
+            const xhr = new XMLHttpRequest();
+            xhr.open('get', './library/header.html');
+            xhr.send();
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState == 4 && xhr.status == 200) {
+                    $('.header')[0].innerHTML = xhr.responseText;
+                }
+            }
+            const xhr1 =
+                new XMLHttpRequest();
+            xhr1.open('get', './library/footer.html');
+            xhr1.send();
+            xhr1.onreadystatechange = function() {
+                if (xhr1.readyState == 4 && xhr1.status == 200) {
+                    $('.footer')[0].innerHTML = xhr1.responseText;
+                }
+            }
+        });
+    </script>
+</head>
+
+<body>
+    <div class="header">
+    </div>
+    <main>
+        <!-- 轮播图 -->
+        <div class="banner-bg">
+            <div class="banner">
+                <div class="banner-img">
+                    <div class="top">
+                        <ul class="banner-list">
+                            <li>
+                                <a href="">
+                                    <img class="lazy" data-original="../img/banner-1.jpg">
+                                </a>
+                            </li>
+                            <li>
+                                <a href=""></a>
+                            </li>
+                        </ul>
+                        <span class="banner-btn btn-left">&lt;</span>
+                        <span class="banner-btn btn-right">&gt;</span>
+                    </div>
+                    <div class="bottom">
+                        <ul class="bottom-list">
+                            <li>嘉曼集团低至1折</li>
+                            <li>羊绒大牌特卖</li>
+                        </ul>
+                        <div class="bottom-line"></div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="sale">
+            <div class="wrapper">
+                <div class="salrimg">
+                    <a href=""><img class="lazy" data-original="../img/1610099163649_2000x204_90.jpg" alt=""></a>
+
+                </div>
+                <ul class="sale-list">
+                    <li>
+                        <a href="">
+                            <img class="lazy" data-original="../img/sale-1.jpg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href=""><img class="lazy" data-original="../img/sale-2.jpg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href=""><img class="lazy" data-original="../img/sale-3.jpg" alt=""></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="everyDay">
+            <div class="wrapper">
+                <div class="day-img">
+                    <img class="lazy" data-original="../img/everyday.jpg" alt="">
+                </div>
+                <div class="top">
+
+                    <div class="left">
+                        <a href=""> <img class="lazy" data-original="../img/3z.png" alt="">
+                            <img class="discount-1 discount-img lazy" data-original="../img/3z-1.jpg" alt="">
+                            <span class="salePrice">特卖价</span><span class="salePriceNum">￥99</span>
+                            <img class="discount-2 discount-img lazy" data-original="../img/3z-2.jpg" alt="">
+                            <span class="salePrice" style="left: 200px;">特卖价</span><span class="salePriceNum" style="left: 232px;">￥99</span>
+                            <img class="discount-3 discount-img lazy" data-original="../img/3z-3.jpg" alt="">
+                            <span class="salePrice" style="left: 350px;">特卖价</span><span class="salePriceNum" style="left:386px;">￥209</span>
+                            <img class="discount-bg lazy" data-original="../img/discount-bg.png" alt="">
+                            <img class="fenteng lazy" data-original="../img/fenteng.png" alt="">
+                            <span class="fenTengText">共369款</span>
+                            <img class="xtbg1 lazy" data-original="../img/discount-bg.png" alt="">
+                            <img class="xtbg2 lazy" data-original="../img/xiangying.png" alt="">
+                            <span class="xttext">共405款</span>
+                            <img class="yge1 lazy" data-original="../img/discount-bg.png" alt="">
+                            <img class="yge2 lazy" data-original="../img/yageer.png" alt="">
+                            <span class="yget">共304款</span></a>
+
+                    </div>
+                    <div class="right">
+                        <a href=""><img class="lazy" data-original="../img/right-bg.png" alt="">
+                            <img class="right-1 lazy" data-original="../img/right-4.jpg" alt="">
+                            <img class="right-2 lazy" data-original="../img/right-1.jpg" alt="">
+                            <img class="right-3 lazy" data-original="../img/right-5.png" alt="">
+                            <img class="right-4 lazy" data-original="../img/right-4.jpg" alt="">
+                            <img class="right-5 lazy" data-original="../img/right-2.jpg" alt="">
+                            <img class="right-6 lazy" data-original="../img/right-6.png" alt="">
+                            <img class="right-7 lazy" data-original="../img/right-4.jpg" alt="">
+                            <img class="right-8 lazy" data-original="../img/right-3.jpg" alt="">
+                            <img class="right-9 lazy" data-original="../img/right-7.png" alt="">
+                            <span class="right-10">儿童羽绒服</span>
+                            <span class="right-11">女士皮衣</span>
+                            <span class="right-12">护肤套装</span></a>
+
+                    </div>
+                </div>
+                <div class="bottom">
+                    <ul class="list">
+                        <li>
+                            <a href="">
+                                <div><img class="lazy" data-original="../img/Produc/Produc1-1.jpg" alt=""></div>
+                                <div>热销 小新Air14 六核锐龙R5-4600U性能版办公学习手提笔记本电脑</div>
+                                <div><span>￥</span>3699</div>
+                            </a>
+                        </li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="brand">
+            <div class="wrapper">
+                <img class="lazy" data-original="../img/today_DDp.png" alt="" style="width: 100%;">
+                <div class="woman brand-line">
+                    <img class="lazy" data-original="../img/woman_2ad.png" alt="">
+                    <a href="">全部女装品牌<span>></span></a>
+                </div>
+                <div class="brand-img">
+                    <div class="left">
+                        <div class="sc">
+                            <a href=""><span>
+                                <span  class="iconfont">&#xe602;</span>
+                            <span>收藏品牌</span>
+                            </span></a>
+
+                        </div>
+                        <a href=""> <img class="lazy" data-original="../img/woman-1.jpg" alt="">
+                            <h4>恒源祥女装专场</h4>
+                            <p><span>3</span>折封顶</p>
+                        </a>
+                    </div>
+                    <div class="right">
+                        <div class="sc">
+                            <a href=""><span>
+                                <span  class="iconfont">&#xe602;</span>
+                            <span>收藏品牌</span>
+                            </span></a>
+
+                        </div>
+                        <a href=""> <img class="lazy" data-original="../img/woman-2.jpg" alt="">
+                            <h4>富铤FORTEI女装专场</h4>
+                            <p><span>3</span>折封顶</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="brand-img">
+                    <div class="left">
+                        <div class="sc">
+                            <a href=""><span>
+                                <span  class="iconfont">&#xe602;</span>
+                            <span>收藏品牌</span>
+                            </span></a>
+
+                        </div>
+                        <a href=""> <img class="lazy" data-original="../img/woman-1.jpg" alt="">
+                            <h4>恒源祥女装专场</h4>
+                            <p><span>3</span>折封顶</p>
+                        </a>
+                    </div>
+                    <div class="right">
+                        <div class="sc">
+                            <a href=""><span>
+                                <span  class="iconfont">&#xe602;</span>
+                            <span>收藏品牌</span>
+                            </span></a>
+
+                        </div>
+                        <a href=""> <img class="lazy" data-original="../img/woman-2.jpg" alt="">
+                            <h4>富铤FORTEI女装专场</h4>
+                            <p><span>3</span>折封顶</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="brand-img">
+                    <div class="left">
+                        <div class="sc">
+                            <a href=""><span>
+                                <span  class="iconfont">&#xe602;</span>
+                            <span>收藏品牌</span>
+                            </span></a>
+
+                        </div>
+                        <a href=""> <img class="lazy" data-original="../img/woman-1.jpg" alt="">
+                            <h4>恒源祥女装专场</h4>
+                            <p><span>3</span>折封顶</p>
+                        </a>
+                    </div>
+                    <div class="right">
+                        <div class="sc">
+                            <a href=""><span>
+                                <span  class="iconfont">&#xe602;</span>
+                            <span>收藏品牌</span>
+                            </span></a>
+
+                        </div>
+                        <a href=""> <img class="lazy" data-original="../img/woman-2.jpg" alt="">
+                            <h4>富铤FORTEI女装专场</h4>
+                            <p><span>3</span>折封顶</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="more">
+                    <a href="">
+                        逛更多女装品牌
+                    </a>
+                </div>
+                <div class="shoe brand-line">
+                    <img class="lazy" data-original="../img/shoe.png" alt="">
+                    <a href="">全部鞋包品牌<span>></span></a>
+                </div>
+                <div class="brand-img">
+                    <div class="left">
+                        <div class="sc">
+                            <a href=""><span>
+                                <span  class="iconfont">&#xe602;</span>
+                            <span>收藏品牌</span>
+                            </span></a>
+
+                        </div>
+                        <a href=""> <img class="lazy" data-original="../img/woman-1.jpg" alt="">
+                            <h4>恒源祥女装专场</h4>
+                            <p><span>3</span>折封顶</p>
+                        </a>
+                    </div>
+                    <div class="right">
+                        <div class="sc">
+                            <a href=""><span>
+                                <span  class="iconfont">&#xe602;</span>
+                            <span>收藏品牌</span>
+                            </span></a>
+
+                        </div>
+                        <a href=""> <img class="lazy" data-original="../img/woman-2.jpg" alt="">
+                            <h4>富铤FORTEI女装专场</h4>
+                            <p><span>3</span>折封顶</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="brand-img">
+                    <div class="left">
+                        <div class="sc">
+                            <a href=""><span>
+                                <span  class="iconfont">&#xe602;</span>
+                            <span>收藏品牌</span>
+                            </span></a>
+
+                        </div>
+                        <a href=""> <img class="lazy" data-original="../img/woman-1.jpg" alt="">
+                            <h4>恒源祥女装专场</h4>
+                            <p><span>3</span>折封顶</p>
+                        </a>
+                    </div>
+                    <div class="right">
+                        <div class="sc">
+                            <a href=""><span>
+                                <span  class="iconfont">&#xe602;</span>
+                            <span>收藏品牌</span>
+                            </span></a>
+
+                        </div>
+                        <a href=""> <img class="lazy" data-original="../img/woman-2.jpg" alt="">
+                            <h4>富铤FORTEI女装专场</h4>
+                            <p><span>3</span>折封顶</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="brand-img">
+                    <div class="left">
+                        <div class="sc">
+                            <a href=""><span>
+                                <span  class="iconfont">&#xe602;</span>
+                            <span>收藏品牌</span>
+                            </span></a>
+
+                        </div>
+                        <a href=""> <img class="lazy" data-original="../img/woman-1.jpg" alt="">
+                            <h4>恒源祥女装专场</h4>
+                            <p><span>3</span>折封顶</p>
+                        </a>
+                    </div>
+                    <div class="right">
+                        <div class="sc">
+                            <a href=""><span>
+                                <span  class="iconfont">&#xe602;</span>
+                            <span>收藏品牌</span>
+                            </span></a>
+
+                        </div>
+                        <a href=""> <img class="lazy" data-original="../img/woman-2.jpg" alt="">
+                            <h4>富铤FORTEI女装专场</h4>
+                            <p><span>3</span>折封顶</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="more">
+                    <a href="">
+                        逛更多鞋包品牌
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer"></div>
+    </footer>
+
+</body>
+
+
+</html>

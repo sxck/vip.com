@@ -1,0 +1,259 @@
+@charset 'utf-8';
+main {
+  margin-bottom: 130px;
+}
+main .cart-tab {
+  margin-top: 30px;
+  font-size: 0;
+  border-bottom: 1px solid #999;
+}
+main .cart-tab a {
+  font-size: 16px;
+  display: inline-block;
+  padding: 15px 20px;
+  border-bottom: 3px solid #f10180;
+  color: #f10180;
+  text-decoration: none;
+  font-weight: 900;
+}
+main .center {
+  display: none;
+  text-align: center;
+  margin-top: 50px;
+}
+main .center span {
+  display: inline-block;
+  background-image: url('../img/shop-sheet.png');
+  background-position: -164px 0;
+  width: 120px;
+  height: 120px;
+}
+main .center > div {
+  line-height: 25px;
+  margin-left: 20px;
+  display: inline-block;
+  margin-bottom: 15px;
+  color: #333;
+  text-align: left;
+  font-size: 16px;
+  vertical-align: top;
+}
+main .center > div p {
+  margin: 10px 0 15px ;
+}
+main .center > div p:nth-of-type(1) {
+  font-size: 18px;
+}
+main .center > div p:nth-of-type(2) {
+  font-size: 14px;
+}
+main .center > div a {
+  font-size: 14px;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 3px;
+}
+main .center > div a:nth-of-type(1) {
+  background: #f10180;
+  color: #fff;
+}
+main .center > div a:nth-of-type(2) {
+  background-color: #fafafa;
+  border: 1px solid #c2c2c2;
+  color: #333;
+  margin-left: 9px;
+}
+main .shop-list {
+  margin-top: 20px;
+}
+main .shop-list .list-head p {
+  font-size: 18px;
+}
+main .shop-list .list-head p span:nth-of-type(1) {
+  font-weight: 900;
+}
+main .shop-list .list-head p span:nth-of-type(2) {
+  margin: 0 10px;
+}
+main .shop-list .list-head p span:nth-of-type(3) {
+  font-size: 14px;
+}
+main .shop-list .box1 {
+  margin: 10px 0;
+  background-color: #f9f9f9;
+}
+main .shop-list .box1 .list1 {
+  border: 1px solid #e0e0e0;
+  height: 38px;
+  line-height: 38px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  font-size: 12px;
+}
+main .shop-list .box1 .list1 li:nth-of-type(1) {
+  text-align: left;
+  padding-left: 15px;
+  width: 333px;
+  color: #333;
+  font-size: 16px;
+}
+main .shop-list .box1 .list1 li:nth-of-type(1) span:nth-of-type(1) {
+  margin-left: 20px;
+  font-size: 18px;
+}
+main .shop-list .box1 .list1 li:nth-of-type(1) span:nth-of-type(2) {
+  margin-left: 150px;
+  font-size: 12px;
+}
+main .shop-list .box1 .list1 li:nth-of-type(2) {
+  width: 274px;
+}
+main .shop-list .box1 .list1 li:nth-of-type(3) {
+  width: 160px;
+}
+main .shop-list .box1 .list1 li:nth-of-type(4) {
+  width: 174px;
+}
+main .shop-list .box2 {
+  margin: 20px 0 ;
+  font-size: 16px;
+  padding-left: 15px;
+  color: #f10180;
+}
+main .shop-list .box2 input {
+  margin-right: 15px;
+}
+main .shop-list .box3 {
+  border: 1px solid #e0e0e0;
+  background: #fef7fb;
+  padding-top: 20px;
+  padding-left: 15px;
+}
+main .shop-list .box3 .list {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  text-align: center;
+}
+main .shop-list .box3 .list > li:nth-of-type(1) {
+  position: absolute;
+  top: 30px;
+}
+main .shop-list .box3 .list .img {
+  vertical-align: top;
+  display: inline-block;
+  margin-bottom: 20px;
+  margin-left: 25px;
+}
+main .shop-list .box3 .list .img img {
+  width: 74px;
+  height: 74px;
+}
+main .shop-list .box3 .list .sp {
+  margin-left: 50px;
+  width: 203px;
+  display: inline-block;
+  font-size: 12px;
+}
+main .shop-list .box3 .list .sp span {
+  background: #edf3ff;
+  padding: 0 8px;
+  color: #627db6;
+  border-radius: 13px;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+main .shop-list .box3 .list .sp p:nth-of-type(1) a {
+  text-decoration: none;
+}
+main .shop-list .box3 .list .sp p:nth-of-type(1) a:hover {
+  color: #f10180;
+}
+main .shop-list .box3 .list .sp p:nth-of-type(2) {
+  margin-top: 10px;
+  width: 180px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+main .shop-list .box3 .list .jg {
+  display: inline-block;
+  color: #f10180;
+  font-weight: 900;
+  width: 274px;
+  text-align: left;
+  padding-left: 100px;
+}
+main .shop-list .box3 .list .num {
+  width: 180px;
+  display: inline-block;
+  color: #999;
+  line-height: 30px;
+}
+main .shop-list .box3 .list .num span:nth-of-type(1) {
+  margin-right: 15px;
+}
+main .shop-list .box3 .list .num .num-btn {
+  display: inline-block;
+}
+main .shop-list .box3 .list .num .num-btn ul {
+  display: flex;
+  width: 73px;
+  height: 28px;
+  border: 1px solid #999;
+}
+main .shop-list .box3 .list .num .num-btn ul li:nth-of-type(1) {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-color: #f9f8f8;
+  color: #333;
+  font-size: 21px;
+  line-height: 28px;
+  padding: 0 5px;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: opacity 0.3s ease-in;
+}
+main .shop-list .box3 .list .num .num-btn ul li:nth-of-type(1):hover {
+  opacity: 1;
+}
+main .shop-list .box3 .list .num .num-btn ul li:nth-of-type(2) input {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #999;
+  outline: none;
+  vertical-align: super;
+  border-top: none;
+  border-bottom: none;
+  text-align: center;
+}
+main .shop-list .box3 .list .num .num-btn ul li:nth-of-type(3) {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-color: #f9f8f8;
+  color: #333;
+  font-size: 21px;
+  line-height: 28px;
+  padding: 0 5px;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: opacity 0.3s ease-in;
+}
+main .shop-list .box3 .list .num .num-btn ul li:nth-of-type(3):hover {
+  opacity: 1;
+}
+main .shop-list .box3 .list ._del {
+  width: 174px;
+  display: inline-block;
+}
+main .shop-list .box3 .list ._del a {
+  text-decoration: none;
+  opacity: 0.8;
+  color: black;
+}
+main .shop-list .box3 .list ._del a:hover {
+  opacity: 1;
+}

@@ -341,7 +341,6 @@
 }
 .main .produc-center .list {
   height: 36px;
-  margin-bottom: 100px;
   display: flex;
   justify-content: start;
   border: 1px solid #999;
@@ -365,4 +364,85 @@
 }
 .main .produc-center .list li:hover a {
   color: #f10180;
+}
+.main .produc-center > p {
+  margin: 15px 0;
+}
+.main .produc-center > p span {
+  background-image: url(//shop.vipstatic.com/img/detail/detail-sprites-hash-5216deac.png?d775612b);
+  background-position: -494px -190px;
+  width: 23px;
+  height: 18px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.main .produc-center > p a {
+  color: #1d94d1;
+  text-decoration: underline;
+}
+.main .produc-center .parameter {
+  position: relative;
+  padding-left: 20px;
+  padding-bottom: 5px;
+  font-size: 20px;
+  color: #f10180;
+  background: url('../img/detial_line.png') repeat-x bottom;
+  margin-bottom: 10px;
+}
+.main .produc-center .parameter span:nth-of-type(1) {
+  background-image: url(//shop.vipstatic.com/img/detail/detail-sprites-hash-5216deac.png?d775612b);
+  background-position: -275px -234px;
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  top: 9px;
+  left: 0;
+}
+.main .produc-center .parameter span:nth-of-type(2) {
+  color: #999;
+}
+.main .produc-center .table {
+  position: relative;
+}
+.main .produc-center .table tr .left {
+  text-align: right;
+  background-color: #f5f5f5;
+  color: #666;
+  width: 90px;
+  font-weight: 700;
+  vertical-align: middle;
+}
+.main .produc-center .table tr td {
+  border: 1px solid #ededed;
+  padding: 10px;
+  color: #999;
+  width: 370px;
+}
+.main .produc-center .table .table-right {
+  position: absolute;
+  right: 0;
+}
+.main .produc-center .table ._none {
+  display: none;
+}
+.main .produc-center .table .more {
+  text-align: center;
+  font-size: 16px;
+  padding: 10px 0;
+  border: 1px solid #ededed;
+  border-top: 0;
+  cursor: pointer;
+}
+.main .produc-center .table .more span {
+  display: inline-block;
+  width: 12px;
+  height: 8px;
+  background: url('../img/sprite-sheet.png');
+  background-position: -206px -172px;
+}
+.main .produc-center .particulars {
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 50px;
 }

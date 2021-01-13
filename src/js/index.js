@@ -10,66 +10,66 @@ $(".lazy").lazyload({
 (function($) {
     console.log();
     $.fn.extend({
+        slider: function(options) {
+            var aa = 1;
+            var size = $(".banner_select>ul li").length; //5
+            var img_size = $(".banner_wrap>ul li").length; //5
+            for (var i = 0; i <= size - 1; i++) {
+                $(".banner_select>ul li")[i].id = i;
+                $(".banner_wrap>ul li")[i].id = i;
+            }
 
-        slider: function() {
-            let defaults = {
-                speed: 500, // 动画执行时间
-                delay: 3000 // 图片停留时间
-            };
-            let index = 0;
-            let timer = null
-            let aa = 0;
-            let lfSpan = $(this.find('.btn-left'));
-            let bottom_line = $(".bottom-line");
-            console.log((".bottom-line").attr('left'))
-            let riSpan = $(this.find('.banner-btn .btn-right'));
-            $(".bottom-list li").on("mouseover mouseout", function(event) {
-                let b = this.id;
-                if (event.type == "mouseover") {
-                    if (b == 0) {
-                        $(".bottom-line").css({
-                            "left": ('289px')
-                        })
-                    } else if (b == 1) {
-                        $(".bottom-line").css({
-                            "left": ('484px')
-                        })
-                    }
-                    $(`.banner-list li:eq(${b})`).fadeIn(500).css('z-index', '9');
-                    $(`.banner-list li:eq(${b})`).siblings(this).fadeOut(500).css('z-index', '0');
-                    stop();
-                } else if (event.type == "mouseout") {
-                    main();
-                }
+            $(".banner_select>ul li").on("mouseover mouseout", function() {
+                aa = this.id
+                $(".J_trigger_line").css({
+                    "left": (this.id * 195 + 290)
+                })
+                $(".banner_wrap>ul li").eq(this.id).addClass("on").siblings(this).removeClass("on");
+                $(".banner_wrap>ul li").eq(this.id).fadeIn(500).siblings(this).fadeOut(500);
             });
-            lfSpan.on('click', function() {
-                console.log(1);
-                $(`.banner-list li:eq(${aa})`).fadeIn(500).removeAttr('display').css('z-index', '1');
-                $(`.banner-list li:eq(${aa})`).siblings(this).fadeOut(500).removeAttr('display').css('z-index', '9');
 
+            function move() {
+                $(".J_trigger_line").css({
+                    "left": (aa * 195 + 485)
+                })
+                $(".banner_wrap>ul li").eq(aa).addClass("on").siblings(aa).removeClass("on");
+                $(".banner_wrap>ul li").eq(aa).fadeIn(500).siblings(aa).fadeOut(500);
+            }
+
+            var t = setInterval(lunbo, 5000);
+
+            function lunbo() {
+                if (aa == img_size) {
+                    aa = 0;
+                }
+                move();
+                aa++
+            }
+            $(".banner_wrap").hover(function() {
+                clearInterval(t);
+            }, function() {
+                t = setInterval(lunbo, 5000);
+            });
+            $(".left").on('click', function() {
+                if (aa <= 1) {
+                    aa = 1;
+                }
+                aa -= 2;
+                move();
+                aa++;
             })
-
-            let stop = function() {
-                clearInterval(timer);
-            }
-
-            function start() {
-
-                $(".bottom-line").css({
-                    "left": '289px'
-                })
-
-                $(".bottom-line").css({
-                    "left": '484px'
-                })
-            }
-
-            function main() {
-                timer = setInterval(start, 500);
-            }
-            // main()
+            $(".right").on('click', function() {
+                if (aa == 1) {
+                    aa = 0;
+                }
+                aa++;
+                aa--;
+                move();
+                aa++;
+            })
         }
+
     });
 })(jQuery);
 
-$('.banner-img').slider();
+$(document).slider();

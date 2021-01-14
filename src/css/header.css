@@ -277,12 +277,12 @@ li {
   display: inline-block;
   background: #fa2a83;
   width: 53px;
-  height: 32px;
+  height: 33px;
   vertical-align: top;
   padding-top: 6px;
   position: absolute;
   top: 0;
-  right: 0;
+  right: -1px;
   text-align: center;
   line-height: 32px;
 }

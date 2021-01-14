@@ -6,9 +6,7 @@ $(".lazy").lazyload({
     effect: "fadeIn",
 });
 
-
 (function($) {
-    console.log();
     $.fn.extend({
         slider: function(options) {
             var aa = 1;
@@ -71,5 +69,28 @@ $(".lazy").lazyload({
 
     });
 })(jQuery);
-
 $(document).slider();
+
+$.ajax({
+    type: "get",
+    url: "../../interface/getData.php",
+    dataType: "json",
+    success: function(response) {
+        let temp = '';
+        // console.log(response);
+        response.forEach((elm, i) => {
+            let picture = JSON.parse(elm.picture);
+
+            console.log(response);
+            temp += `<li>
+            <a href="produc.html?id=${elm.id}">
+            <div><img class="lazy" src="../img/${picture[0].src}" alt=""></div>
+            <div>${elm.title.slice(0,5)+' ...'}</div>
+            <div><span>￥</span>${elm.price}</div>
+        </a>
+        </li>`
+        });
+
+        $('.everyDay .bottom .list').append(temp);
+    }
+});

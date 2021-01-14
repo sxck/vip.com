@@ -79,7 +79,7 @@ main .shop-list .list-head p span:nth-of-type(3) {
   font-size: 14px;
 }
 main .shop-list .box1 {
-  margin: 10px 0;
+  margin-top: 10px;
   background-color: #f9f9f9;
 }
 main .shop-list .box1 .list1 {
@@ -115,48 +115,39 @@ main .shop-list .box1 .list1 li:nth-of-type(3) {
 main .shop-list .box1 .list1 li:nth-of-type(4) {
   width: 174px;
 }
-main .shop-list .box2 {
-  margin: 20px 0 ;
-  font-size: 16px;
-  padding-left: 15px;
-  color: #f10180;
-}
-main .shop-list .box2 input {
-  margin-right: 15px;
-}
 main .shop-list .box3 {
   border: 1px solid #e0e0e0;
   background: #fef7fb;
   padding-top: 20px;
   padding-left: 15px;
 }
-main .shop-list .box3 .list {
+main .shop-list .box3 > .b3-b1 > .list {
   display: flex;
   justify-content: space-between;
   position: relative;
   text-align: center;
 }
-main .shop-list .box3 .list > li:nth-of-type(1) {
+main .shop-list .box3 > .b3-b1 > .list > li:nth-of-type(1) {
   position: absolute;
   top: 30px;
 }
-main .shop-list .box3 .list .img {
+main .shop-list .box3 > .b3-b1 > .list .img {
   vertical-align: top;
   display: inline-block;
   margin-bottom: 20px;
   margin-left: 25px;
 }
-main .shop-list .box3 .list .img img {
+main .shop-list .box3 > .b3-b1 > .list .img img {
   width: 74px;
   height: 74px;
 }
-main .shop-list .box3 .list .sp {
+main .shop-list .box3 > .b3-b1 > .list .sp {
   margin-left: 50px;
   width: 203px;
   display: inline-block;
   font-size: 12px;
 }
-main .shop-list .box3 .list .sp span {
+main .shop-list .box3 > .b3-b1 > .list .sp span {
   background: #edf3ff;
   padding: 0 8px;
   color: #627db6;
@@ -164,20 +155,20 @@ main .shop-list .box3 .list .sp span {
   display: inline-block;
   margin-bottom: 5px;
 }
-main .shop-list .box3 .list .sp p:nth-of-type(1) a {
+main .shop-list .box3 > .b3-b1 > .list .sp p:nth-of-type(1) a {
   text-decoration: none;
 }
-main .shop-list .box3 .list .sp p:nth-of-type(1) a:hover {
+main .shop-list .box3 > .b3-b1 > .list .sp p:nth-of-type(1) a:hover {
   color: #f10180;
 }
-main .shop-list .box3 .list .sp p:nth-of-type(2) {
+main .shop-list .box3 > .b3-b1 > .list .sp p:nth-of-type(2) {
   margin-top: 10px;
   width: 180px;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
 }
-main .shop-list .box3 .list .jg {
+main .shop-list .box3 > .b3-b1 > .list .jg {
   display: inline-block;
   color: #f10180;
   font-weight: 900;
@@ -185,43 +176,42 @@ main .shop-list .box3 .list .jg {
   text-align: left;
   padding-left: 100px;
 }
-main .shop-list .box3 .list .num {
+main .shop-list .box3 > .b3-b1 > .list .num {
   width: 180px;
   display: inline-block;
   color: #999;
   line-height: 30px;
 }
-main .shop-list .box3 .list .num span:nth-of-type(1) {
-  margin-right: 15px;
-}
-main .shop-list .box3 .list .num .num-btn {
+main .shop-list .box3 > .b3-b1 > .list .num .num-btn {
+  box-sizing: border-box;
   display: inline-block;
-}
-main .shop-list .box3 .list .num .num-btn ul {
-  display: flex;
-  width: 73px;
+  width: 77px;
   height: 28px;
   border: 1px solid #999;
 }
-main .shop-list .box3 .list .num .num-btn ul li:nth-of-type(1) {
-  width: 100%;
-  height: 100%;
+main .shop-list .box3 > .b3-b1 > .list .num .num-btn span:nth-of-type(1) {
+  width: 25px;
+  height: 26px;
+  float: left;
   text-align: center;
   background-color: #f9f8f8;
   color: #333;
   font-size: 21px;
-  line-height: 28px;
-  padding: 0 5px;
+  line-height: 26px;
   cursor: pointer;
   opacity: 0.5;
   transition: opacity 0.3s ease-in;
 }
-main .shop-list .box3 .list .num .num-btn ul li:nth-of-type(1):hover {
+main .shop-list .box3 > .b3-b1 > .list .num .num-btn span:nth-of-type(1):hover {
   opacity: 1;
 }
-main .shop-list .box3 .list .num .num-btn ul li:nth-of-type(2) input {
-  width: 100%;
-  height: 100%;
+main .shop-list .box3 > .b3-b1 > .list .num .num-btn input {
+  margin: 0 ;
+  padding: 0;
+  width: 25px;
+  height: 26px;
+  float: left;
+  font-size: 12px;
   border: 1px solid #999;
   outline: none;
   vertical-align: super;
@@ -229,31 +219,42 @@ main .shop-list .box3 .list .num .num-btn ul li:nth-of-type(2) input {
   border-bottom: none;
   text-align: center;
 }
-main .shop-list .box3 .list .num .num-btn ul li:nth-of-type(3) {
-  width: 100%;
-  height: 100%;
+main .shop-list .box3 > .b3-b1 > .list .num .num-btn span:nth-of-type(2) {
+  height: 26px;
+  width: 25px;
+  float: right;
   text-align: center;
   background-color: #f9f8f8;
   color: #333;
   font-size: 21px;
-  line-height: 28px;
-  padding: 0 5px;
+  line-height: 26px;
   cursor: pointer;
   opacity: 0.5;
   transition: opacity 0.3s ease-in;
 }
-main .shop-list .box3 .list .num .num-btn ul li:nth-of-type(3):hover {
+main .shop-list .box3 > .b3-b1 > .list .num .num-btn span:nth-of-type(2):hover {
   opacity: 1;
 }
-main .shop-list .box3 .list ._del {
+main .shop-list .box3 > .b3-b1 > .list ._del {
   width: 174px;
   display: inline-block;
 }
-main .shop-list .box3 .list ._del a {
+main .shop-list .box3 > .b3-b1 > .list ._del a {
   text-decoration: none;
   opacity: 0.8;
   color: black;
 }
-main .shop-list .box3 .list ._del a:hover {
+main .shop-list .box3 > .b3-b1 > .list ._del a:hover {
   opacity: 1;
+}
+main .shop-list .box4 {
+  margin-top: 20px;
+}
+main .shop-list .box4 p {
+  text-align: right;
+  font-size: 18px;
+}
+main .shop-list .box4 p span {
+  font-size: 20px;
+  color: #f10180;
 }

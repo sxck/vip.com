@@ -376,12 +376,24 @@ main .everyDay .bottom .list {
   position: relative;
 }
 main .everyDay .bottom .list li {
+  border: 1px solid #999;
   margin-top: 74px;
   text-align: center;
   width: 145px;
 }
+main .everyDay .bottom .list li img {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 15px;
+}
 main .everyDay .bottom .list li a {
   text-decoration: none;
+}
+main .everyDay .bottom .list li a div {
+  margin-top: 10px;
+}
+main .everyDay .bottom .list li a:hover {
+  color: #f10180;
 }
 main .everyDay .bottom .list li img {
   display: block;

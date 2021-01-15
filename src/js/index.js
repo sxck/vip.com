@@ -1,10 +1,9 @@
 import './library/jquery.js';
 import './library/jquery.lazyload.js';
+import './library/jquery.lazyload.js';
 
 
-$(".lazy").lazyload({
-    effect: "fadeIn",
-});
+
 
 (function($) {
     $.fn.extend({
@@ -34,7 +33,7 @@ $(".lazy").lazyload({
                 $(".banner_wrap>ul li").eq(aa).fadeIn(500).siblings(aa).fadeOut(500);
             }
 
-            var t = setInterval(lunbo, 5000);
+            var t = setInterval(lunbo, 3000);
 
             function lunbo() {
                 if (aa == img_size) {
@@ -81,10 +80,9 @@ $.ajax({
         response.forEach((elm, i) => {
             let picture = JSON.parse(elm.picture);
 
-            console.log(response);
             temp += `<li>
             <a href="produc.html?id=${elm.id}">
-            <div><img class="lazy" src="../img/${picture[0].src}" alt=""></div>
+            <div><img class="lazy" data-original="../img/${picture[0].src}" alt=""></div>
             <div>${elm.title.slice(0,5)+' ...'}</div>
             <div><span>￥</span>${elm.price}</div>
         </a>
@@ -92,5 +90,9 @@ $.ajax({
         });
 
         $('.everyDay .bottom .list').append(temp);
+
+        $(".lazy").lazyload({
+            effect: "fadeIn",
+        });
     }
 });

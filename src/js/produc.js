@@ -40,7 +40,7 @@ $.ajax({
                         <span>￥</span>
                         <span class="yuan">${res.price}</span>
                         <span>5折起</span>
-                        <span class="wpkq"><img src="../img/wpkq-font.png" alt=""></span>
+                        <span class="wpkq"><img data-original="../img/wpkq-font.png" alt=""></span>
                         <span>累计热卖1.7万件</span>
                         <span>券后${res.price}起</span>
                     </div>
@@ -69,13 +69,13 @@ $.ajax({
                         </div>
                     </div>
                     <div class="addcar">
-                    <a href="javascript:">￥${res.price}起 券后价 抢 &gt;</a>`
+                    <a href="./shop.html">￥${res.price}起 券后价 抢 &gt;</a>`
 
         $('.main .right').prepend(temp).find('.addcar').on('click', function() {
             addItem(res.id, res.price, $('.num input').val());
         });
 
-        let temp2 = `<img class="lazy" src="../img/${details[0].src}" alt="">`;
+        let temp2 = `<img class="lazy" data-original="../img/${details[0].src}" alt="">`;
         $('.particulars').append(temp2);
 
         let num = parseInt($('.num-btn input').val());
@@ -108,9 +108,9 @@ $.ajax({
         let li = [];
         li = $('.botimg li');
         console.log(li);
-        // $('.botimg li').forEach(elm => {
-        //     console.log(elm)
-        // })
+        $(".lazy").lazyload({
+            effect: "fadeIn",
+        });
     }
 });
 
@@ -142,10 +142,7 @@ function addItem(id, price, num) {
         shop = []; // 初始没有数据 初始化一个空数组
         shop.push(product); // 将第一个商品添加进数组
     }
-
-
     cookie.set('shop', JSON.stringify(shop), 1);
-
 }
 $(".lazy").lazyload({
     effect: "fadeIn",

@@ -1,0 +1,308 @@
+@charset 'utf-8';
+* {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.wrapper {
+  width: 1000px;
+  margin: 0 auto;
+}
+.header {
+  height: 100px;
+}
+.header .logo {
+  margin: 0 auto;
+}
+.header .logo .logo-left {
+  background-image: url(../img/logo_sheet.png);
+  background-position: -308px -57px;
+  width: 125px;
+  height: 100px;
+  display: inline-block;
+  vertical-align: top;
+  line-height: 500px;
+  overflow: hidden;
+}
+.header .logo .logo-right {
+  display: inline-block;
+  background-image: url(../img/logo_sheet.png);
+  width: 304px;
+  height: 100px;
+  float: right;
+}
+.main .main1 {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/login-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.main .main1 .center {
+  margin-right: auto;
+  margin-left: auto;
+  padding: 50px 0;
+  height: 500px;
+  width: 1000px;
+  border: 1px solid #999;
+}
+.main .main1 .center .f-right {
+  width: 400px;
+  background: #fff;
+  float: right;
+  border-radius: 2px;
+}
+.main .main1 .center .f-right .top {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  border-bottom: 1px solid #999;
+}
+.main .main1 .center .f-right .top .color {
+  color: #f10180;
+  cursor: default;
+}
+.main .main1 .center .f-right .top span {
+  font-size: 18px;
+  font-weight: 700;
+  width: 180px;
+  line-height: 50px;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+}
+.main .main1 .center .f-right .top span:last-child ::after {
+  display: none;
+}
+.main .main1 .center .f-right .top ::after {
+  position: absolute;
+  top: 15px;
+  left: 200px;
+  z-index: 1;
+  width: 1px;
+  height: 20px;
+  background-color: #ccc;
+  content: '';
+  font-size: 0;
+  line-height: 0;
+}
+.main .main1 .center .f-right .text {
+  display: none;
+  margin: 50px 37px;
+}
+.main .main1 .center .f-right .text input {
+  outline: none;
+  padding-left: 40px;
+  width: 285px;
+  height: 32px;
+  line-height: 32px;
+}
+.main .main1 .center .f-right .text .user {
+  position: relative;
+}
+.main .main1 .center .f-right .text .user span {
+  position: absolute;
+  left: 11px;
+  top: 10px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url(../img/logo_sheet.png) -505px -222px;
+}
+.main .main1 .center .f-right .text .pass {
+  margin-top: 20px;
+  position: relative;
+}
+.main .main1 .center .f-right .text .pass span {
+  position: absolute;
+  left: 11px;
+  top: 7px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url(../img/logo_sheet.png) -528px -221px;
+}
+.main .main1 .center .f-right .text .dx {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  padding: 20px 0;
+}
+.main .main1 .center .f-right .text .dx span:hover {
+  color: #f10180;
+  cursor: pointer;
+}
+.main .main1 .center .f-right .text .dx a {
+  font-size: 12px;
+  color: black;
+}
+.main .main1 .center .f-right .text .dx a:hover {
+  color: #f10180;
+}
+.main .main1 .center .f-right .text .btn button {
+  color: #fff;
+  font-size: 20px;
+  width: 330px;
+  height: 46px;
+  background: #f10180;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+}
+.main .main1 .center .f-right .ewm {
+  text-align: center;
+  margin: 50px 0;
+  position: relative;
+  height: 192px;
+}
+.main .main1 .center .f-right .ewm span:nth-of-type(1) {
+  display: inline-block;
+  width: 150px;
+  position: absolute;
+  border: 1px solid #999;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-top: 10px;
+  left: 125px;
+  transition: all 0.5s ease-in;
+}
+.main .main1 .center .f-right .ewm span:nth-of-type(1) img {
+  width: 100%;
+  height: 100%;
+}
+.main .main1 .center .f-right .ewm span:nth-of-type(1):hover {
+  left: 46px;
+}
+.main .main1 .center .f-right .ewm span:nth-of-type(1):hover span:nth-of-type(2) {
+  opacity: 1;
+}
+.main .main1 .center .f-right .ewm span:nth-of-type(2) {
+  position: absolute;
+  vertical-align: top;
+  opacity: 0;
+  display: inline-block;
+  width: 120px;
+  height: 192px;
+  background: url(../img/logo_sheet.png) 0 -104px no-repeat;
+  transition: all 0.5s ease-in;
+}
+.main .main1 .center .f-right .ewm:hover span:nth-of-type(1) {
+  left: 46px;
+}
+.main .main1 .center .f-right .ewm:hover span:nth-of-type(2) {
+  opacity: 1;
+}
+.main .main1 .center .f-right .wx {
+  text-align: center;
+}
+.main .main1 .center .f-right .wx .wx-box1 {
+  position: relative;
+  z-index: 3;
+  margin-bottom: 10px;
+  height: 40px;
+  margin: 0 40px;
+}
+.main .main1 .center .f-right .wx .wx-box1 ::before {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -30px;
+  z-index: 2;
+  width: 60px;
+  height: 40px;
+  content: '';
+  background-color: #fff;
+}
+.main .main1 .center .f-right .wx .wx-box1 :after {
+  position: absolute;
+  content: '';
+  top: 20px;
+  left: 0;
+  width: 100%;
+  border-top: 1px solid #999;
+}
+.main .main1 .center .f-right .wx a ::before {
+  display: none;
+}
+.main .main1 .center .f-right .wx a span {
+  z-index: 3;
+  background-image: url(../img/logo_sheet.png);
+  background-position: -580px -161px;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  position: relative;
+}
+.main .main1 .center .f-right .wx a ::after {
+  display: none;
+}
+.main .main1 .center .f-right .more {
+  font-size: 14px;
+}
+.main .main1 .center .f-right .more li {
+  margin: 10px;
+  position: relative;
+  cursor: default;
+}
+.main .main1 .center .f-right .more li ::after {
+  position: absolute;
+  top: 50%;
+  right: -11px;
+  z-index: 1;
+  margin-top: -5px;
+  height: 10px;
+  content: '';
+  border-left: 1px solid #e0e0e0;
+}
+.main .main1 .center .f-right .more li a {
+  color: black;
+}
+.main .main1 .center .f-right .more li a:hover {
+  color: #f10180;
+}
+.main .main1 .center .f-right .more ul {
+  display: flex;
+  color: #999;
+  margin-left: 30px;
+  position: relative;
+}
+.main .main1 .center .f-right .more .more-list .no ::after {
+  display: none;
+}
+.main .main1 .center .f-right .more .more-list .more1 {
+  cursor: pointer;
+}
+.main .main1 .center .f-right .more .more-list .more1 .xia {
+  margin-left: 5px;
+  color: red;
+  display: inline-block;
+  height: 8px;
+  width: 9px;
+  background: url(../img/sprite-sheet.png);
+  background-position: -58px -208px;
+}
+.main .main1 .center .f-right .more .more-list .more1 .shang {
+  margin-left: 5px;
+  color: red;
+  display: inline-block;
+  height: 8px;
+  width: 9px;
+  background: url(../img/sprite-sheet.png);
+  background-position: -45px -208px;
+}
+.main .main1 .center .f-right .more .more-list2 {
+  display: none;
+}
+.main .main1 .center .f-right .more .more-list2 a:hover {
+  color: #f10180;
+}
+.main .main1 .center .f-right .more .more-list2 li:last-child ::after {
+  display: none;
+}
